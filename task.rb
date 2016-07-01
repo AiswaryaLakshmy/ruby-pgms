@@ -151,15 +151,6 @@ class Todaystopics
 		puts a
 	end
 
-	def reverse
-		puts '..........reverse.......'
-		a = [1,2,3]
-		puts a
-		puts ' '
-		puts a.reverse
-	end
-	
-
 	def pushpop
 		puts '......pushpop.....'
 		a = [1,2]
@@ -186,7 +177,7 @@ class Todaystopics
 			puts "value of #{k} is #{v}"
 		end
 	end
-
+	
 	obj = Todaystopics.new
 	obj.first
 	obj.second
