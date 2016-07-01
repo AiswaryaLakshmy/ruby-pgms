@@ -2,7 +2,7 @@
 
 class Todaystopics
 
-	def first
+	def ifelsif
 		puts '...........First..........'
 		x = 1
 		if x > 2
@@ -14,7 +14,7 @@ class Todaystopics
 		end
 	end
 
-	def second
+	def unless
 		puts '.............Second..........'
 		x = 1
 		unless x > 2
@@ -24,7 +24,7 @@ class Todaystopics
 		end
 	end
 
-	def third
+	def while
 		puts '............Third...........'
 		i = 0
 		num = 5
@@ -35,7 +35,7 @@ class Todaystopics
 		end
 	end
 
-	def fourth
+	def begin
 		puts '...........Fourth............'
 		i = 1
 		num = 8
@@ -45,7 +45,7 @@ class Todaystopics
 		end while i < num
 	end
 
-	def untiloop
+	def until
 		puts '..........Until loop..........'
 		i = 1
 		number = 9
@@ -104,88 +104,7 @@ class Todaystopics
 		a << 2
 		puts "array is #{a}"
 	end
-
-	def downcase
-		puts '.........downcase........'
-		a = "ABC"
-		puts a.downcase
-		puts a
-	end
-
-	def downcasebang
-		puts '.........downcase!........'
-		a = "ABC"
-		puts a.downcase!
-		puts a
-	end
-
-	def sort
-		puts '...........sort........'
-		a = [1,4,3,2]
-		puts a.sort
-		puts " "
-		puts a 
-	end
-
-	def sortbang
-		puts '...........sort!........'
-		a = [1,4,3,2]
-		puts a.sort!
-		puts " "
-		puts a 
-	end
-
-	def unique
-		puts '.........unique.......'
-		a = [1,2,1,2]
-		puts a.uniq
-		puts ' '
-		puts a
-	end
-
-	def uniquebang
-		puts '.........uniquebang.......'
-		a = [1,2,1,2]
-		puts a.uniq!
-		puts ' '
-		puts a
-	end
-
-	def reverse
-		puts '..........reverse.......'
-		a = [1,2,3]
-		puts a
-		puts ' '
-		puts a.reverse
-	end
-
-	def pushpop
-		puts '......pushpop.....'
-		a = [1,2]
-		a.push 3
-		puts "after push array is #{a}"
-		a.pop 1
-		puts "after pop, array is #{a}"
-	end
-
-	def reject
-		puts ".....reject......"
-		puts [1, 2, 3, 4, 5, 6].reject { |i| i.even? }
-	end
-
-	def keepif
-		puts '.....keep if......'
-		puts [1, 2, 3, 4, 5, 6, 7, 8].keep_if { |i| i.even? }
-	end
-
-	def hash
-		puts '..............hash..........'
-		a = { 'a' => '1', 'b' => '2' }
-		a.each do | k , v |
-			puts "value of #{k} is #{v}"
-		end
-	end
-
+	
 	obj = Todaystopics.new
 	obj.first
 	obj.second
@@ -199,16 +118,5 @@ class Todaystopics
 	obj.arrayprint
 	obj.arraystring
 	obj.insertinarray
-	obj.downcase
-	obj.downcasebang
-	obj.sort
-	obj.sortbang
-	obj.unique
-	obj.uniquebang
-	obj.reverse
-	obj.pushpop
-	obj.reject
-	obj.keepif
-	obj.hash
 end
 		 	 
