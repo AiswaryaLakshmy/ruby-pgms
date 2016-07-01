@@ -48,7 +48,7 @@ class Todaystopics
 	def until
 		puts '..........Until loop..........'
 		i = 1
-		number = 9
+		#number = 9
 		begin
 			puts "Inside loop i = #{i}"
 			i = i + 1
@@ -151,6 +151,22 @@ class Todaystopics
 		puts a
 	end
 
+	def reverse
+		puts '..........reverse.........'
+		a = [1, 2, 3]
+		puts a.reverse
+		puts " "
+		puts a
+	end
+
+	def reversebang
+		puts '..........reversebang.........'
+		a = [1, 2, 3]
+		puts a.reverse!
+		puts " "
+		puts a
+	end
+
 	def pushpop
 		puts '......pushpop.....'
 		a = [1,2]
@@ -179,11 +195,11 @@ class Todaystopics
 	end
 	
 	obj = Todaystopics.new
-	obj.first
-	obj.second
-	obj.third
-	obj.fourth
-	obj.untiloop
+	obj.ifelsif
+	obj.unless
+	obj.while
+	obj.begin
+	obj.until
 	obj.forloop
 	obj.eachloop
 	obj.loopdo
@@ -198,6 +214,7 @@ class Todaystopics
 	obj.unique
 	obj.uniquebang
 	obj.reverse
+	obj.reversebang
 	obj.pushpop
 	obj.reject
 	obj.keepif
